@@ -24,6 +24,31 @@ int getUserOption() {
 }
 
 
+void printHelp() {
+    std::cout<<"Help - Your aim is to make money. Analyse the market"<<std::endl;
+}
+
+void printMarketStats() {
+ std::cout<<"Market Looks Good"<<std::endl;
+}
+
+void enterOffer() {
+  std::cout<<"Mark and offer - Enter the amount"<<std::endl;
+}
+
+
+void enterBid() {
+  std::cout<<"Make a bid - enter the amount"<<std::endl;
+}
+
+void printWallet() {
+     std::cout<<"Your wallet is empty"<<std::endl;
+}
+
+void nextFrame() {
+       std::cout<<"Going to next time frame"<<std::endl;
+}
+
 void processUserOption(int userOption) {
 
     if(userOption > 6 || userOption < 1){
@@ -33,27 +58,27 @@ void processUserOption(int userOption) {
 
 
     if(userOption == 1) {
-        std::cout<<"Help - Your aim is to make money. Analyse the market"<<std::endl;
+        printHelp();
     }
 
         if(userOption == 2) {
-        std::cout<<"Market Looks Good"<<std::endl;
+       printMarketStats();
     }
 
         if(userOption == 3) {
-        std::cout<<"Mark and offer - Enter the amount"<<std::endl;
+      enterOffer();
     }
 
         if(userOption == 4) {
-        std::cout<<"Make a bid - enter the amount"<<std::endl;
+      enterBid();
     }
 
         if(userOption == 5) {
-        std::cout<<"Your wallet is empty"<<std::endl;
+       printWallet();
     }
 
         if(userOption == 6) {
-        std::cout<<"Going to next time frame"<<std::endl;
+     nextFrame();
     }
 }
 
